@@ -1,0 +1,15 @@
+[profile.default]
+solc = "0.8.30"
+src = "src"
+out = "out"
+libs = ["lib"]
+via_ir = true
+optimizer = true
+optimizer_runs = 800
+gas_reports = ["*"]
+fs_permissions = [
+  { access = "read", path = "./out/" },
+  { access = "read", path = "./broadcast/" },
+]
+sizes = true
+names = true
